@@ -26,7 +26,7 @@
 <body>
 <header><div class="wrap nav">
  <a class="brand" href="#top"><span class="mono"><b>L</b><i>P</i></span><span>LILIANA PINTO</span></a>
- <nav aria-label="Secções"><a href="#imoveis">Imóveis</a><a href="#sobre">Sobre mim</a><a href="#2flagshome">2FlagsHome</a><a href="#contacto">Contacto</a><a class="nav-lang" href="/en/" hreflang="en" lang="en">EN</a><a class="nav-lang" href="/fr/" hreflang="fr" lang="fr">FR</a></nav>
+ <nav aria-label="Secções"><a href="#imoveis">Imóveis</a><a href="#procura">Procuro casa</a><a href="#sobre">Sobre mim</a><a href="#2flagshome">2FlagsHome</a><a href="#contacto">Contacto</a><a class="nav-lang" href="/en/" hreflang="en" lang="en">EN</a><a class="nav-lang" href="/fr/" hreflang="fr" lang="fr">FR</a></nav>
 </div></header>
 
 <main id="top">
@@ -85,8 +85,38 @@
 <article class="prop plain"><div class="pb"><span class="badge static">Venda</span><p class="loc">Avenida da República · Gaia</p><h3><a href="/imoveis/t3-duplex-ultimo-piso-avenida-da-republica-gaia">T3 duplex no último piso</a></h3><p class="spec">125 m² · suite + 2 quartos · 3 casas de banho · sol da tarde · metro à porta</p><div class="pf"><span class="price">410.000 €</span><span class="ref">Ref. DL26-54</span></div><a class="more" href="/imoveis/t3-duplex-ultimo-piso-avenida-da-republica-gaia">Ver imóvel →</a></div></article>
 <article class="prop plain"><div class="pb"><span class="badge static">Venda</span><p class="loc">Conlelas · Bragança</p><h3><a href="/imoveis/terreno-agricola-castanheiros-conlelas-braganca">Terreno agrícola</a></h3><p class="spec">32.630 m² · castanheiros · três parcelas · frente para a estrada</p><div class="pf"><span class="price">65.000 €</span><span class="ref">Ref. DL23-161</span></div><a class="more" href="/imoveis/terreno-agricola-castanheiros-conlelas-braganca">Ver imóvel →</a></div></article>
 <!-- IMOVEIS:FIM -->
+<article class="prop plain" style="background:var(--ivory);border:1px solid var(--gold)"><div class="pb"><p class="loc">Compradores</p><h3>Não encontrou o que procura?</h3><p class="spec">Diga-me a zona, a tipologia e o orçamento. Eu procuro por si, incluindo imóveis que ainda não estão anunciados.</p><a class="more" href="#procura">Pedir pesquisa →</a></div></article>
 <article class="prop plain" style="background:var(--bordo);color:var(--ivory)"><div class="pb"><p class="loc" style="color:var(--gold-soft)">Proprietários</p><h3 style="color:var(--ivory)">Quer vender ou arrendar a sua casa?</h3><p class="spec" style="color:var(--rose)">Faço a avaliação, as fotografias e o vídeo, e divulgo o seu imóvel nos portais e nas redes.</p><a class="more" href="#contacto" data-interesse="Quero vender ou pedir avaliação" style="color:var(--gold-soft)">Pedir avaliação →</a></div></article></div>
 </div></section>
+
+<section id="procura" class="flags"><div class="wrap"><div class="frame procura">
+ <div>
+  <p class="eyebrow">Para quem quer comprar</p>
+  <h2 style="margin-top:14px">Não encontrou a casa certa? <em>Eu procuro por si.</em></h2>
+  <p class="fl-lead">Diga-me o que procura e eu faço a pesquisa: nos imóveis da Douro Lovers, nos que ainda não estão anunciados e junto de outros colegas. Quando aparecer algo à sua medida, é o primeiro a saber.</p>
+  <ul class="procura-lista">
+   <li>Pesquisa feita por mim, sem custo para si</li>
+   <li>Só recebe imóveis que encaixam no que pediu</li>
+   <li>Acompanho as visitas, a negociação e o crédito</li>
+  </ul>
+ </div>
+ <form class="form form-escuro" name="procura" method="POST" action="/obrigado" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="subject" value="Novo cliente comprador · 2flagshome.com">
+  <p class="hp"><label>Não preencher <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+  <label>Nome<input type="text" name="nome" autocomplete="name" required></label>
+  <label>Telefone<input type="tel" name="telefone" autocomplete="tel" required></label>
+  <label class="full">Email<input type="email" name="email" autocomplete="email"></label>
+  <label>Procuro para<select name="negocio"><option>Comprar</option><option>Arrendar</option><option>Investir</option></select></label>
+  <label>Tipo de imóvel<select name="tipo"><option>Apartamento</option><option>Moradia</option><option>Terreno</option><option>Espaço comercial</option><option>Qualquer um</option></select></label>
+  <label>Quartos<select name="quartos"><option>T0 / T1</option><option>T2</option><option>T3</option><option>T4 ou mais</option><option>Indiferente</option></select></label>
+  <label>Orçamento máximo<input type="text" name="orcamento" placeholder="ex.: 300.000 €"></label>
+  <label class="full">Zonas que prefere<input type="text" name="zonas" placeholder="ex.: Gaia, Matosinhos, Porto"></label>
+  <label>Para quando<select name="prazo"><option>O mais depressa possível</option><option>Nos próximos 3 meses</option><option>Nos próximos 6 meses</option><option>Ainda estou a ver</option></select></label>
+  <label>Precisa de crédito?<select name="credito"><option>Sim</option><option>Não</option><option>Ainda não sei</option></select></label>
+  <label class="full">O que é importante para si<textarea name="mensagem" placeholder="Garagem, varanda, perto da escola ou do metro, vista…"></textarea></label>
+  <button class="btn full" type="submit">Quero que me encontre casa</button>
+ </form>
+</div></div></section>
 
 <section id="sobre" style="background:#FBFAF7;border-block:1px solid var(--line)"><div class="wrap">
  <div class="about">

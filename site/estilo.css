@@ -186,3 +186,15 @@ a.ph{display:block}
 .faq summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .faq details p{margin:10px 0 0;color:var(--muted);max-width:44em}
 @media (max-width:760px){.langs{margin-left:auto}}
+/* procura para compradores */
+.procura{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.procura h2{color:var(--ivory);font-size:clamp(34px,4.5vw,52px)}
+.procura h2 em{color:var(--gold-soft)}
+.procura-lista{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.procura-lista li{color:var(--rose);font-size:14px;padding-left:22px;position:relative}
+.procura-lista li::before{content:"";position:absolute;left:0;top:.6em;width:10px;height:1px;background:var(--gold-soft)}
+.form-escuro{margin-top:0}
+.form-escuro label{color:var(--gold-soft)}
+.form-escuro input,.form-escuro select,.form-escuro textarea{border-color:rgba(227,203,148,.5)}
+.form-escuro .btn{background:var(--ivory);color:var(--bordo);border-color:var(--ivory)}
+@media (max-width:900px){.procura{grid-template-columns:1fr;gap:28px}}

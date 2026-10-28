@@ -108,6 +108,7 @@ def pagina(i, todos):
   <p>{e(i['descricao'])}</p>
   <div class="btns"><a class="btn solid" href="{e(wa)}" target="_blank" rel="noopener">Perguntar no WhatsApp</a><a class="btn ghost" href="#pedido">Marcar visita</a></div>
   <p class="im-dl"><a href="{e(i['douro_lovers'])}" target="_blank" rel="noopener">Ficha completa e todas as fotos na Douro Lovers →</a></p>
+  <p class="im-lang">Não é bem este? <a href="/#procura">Diga-me o que procura e eu encontro.</a></p>
   <p class="im-lang">English or French? <a href="/en/#contact">I can help in your language.</a></p>
  </div>
 </div>

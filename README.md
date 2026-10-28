@@ -9,10 +9,17 @@ Site da Liliana Pinto (consultora imobiliária, Douro Lovers) e da 2FlagsHome.
 
 O formulário "contacto" usa o Netlify Forms. Os pedidos aparecem em Netlify, no separador **Forms** do projeto `lilianapinto`. Depois de enviar, a pessoa vê a página `obrigado.html`.
 
-## Acrescentar um imóvel
+## Páginas
+
+- `/` página principal (português)
+- `/en/` e `/fr/` página 2FlagsHome completa, em inglês e francês
+- `/imoveis/<nome>` uma página por imóvel, geradas automaticamente
+
+## Acrescentar ou tirar um imóvel
 
 1. Ponha a foto em `site/imagens/` (nome sem espaços nem acentos, por exemplo `imovel-t3-gaia.jpg`).
-2. Em `site/index.html`, copie um bloco `<article class="prop"> ... </article>` e troque a foto, a etiqueta (Venda / Arrendamento / Trespasse), a zona, o título, as características, o preço, a referência e o link da Douro Lovers.
-3. Para tirar um imóvel vendido, apague o bloco dele.
+2. Acrescente (ou apague) a entrada do imóvel em `dados/imoveis.json`.
+3. Corra `python3 ferramentas/gerar.py`. Isto cria as páginas dos imóveis, os cartões da página principal e o `sitemap.xml`.
+4. Guarde no GitHub. O Netlify publica sozinho.
 
 Projeto Netlify: https://app.netlify.com/projects/lilianapinto

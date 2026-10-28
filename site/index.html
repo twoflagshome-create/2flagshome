@@ -9,6 +9,9 @@
 <meta property="og:description" content="Comprar, vender e arrendar casa em Portugal. 2FlagsHome: apoio a clientes estrangeiros.">
 <meta name="google-site-verification" content="qoDZcfMK17noyRwh4YALUIdBI_WJBJIarIKUSrg28b4">
 <link rel="canonical" href="https://2flagshome.com/">
+<link rel="alternate" hreflang="pt" href="https://2flagshome.com/">
+<link rel="alternate" hreflang="en" href="https://2flagshome.com/en/">
+<link rel="alternate" hreflang="fr" href="https://2flagshome.com/fr/">
 <meta property="og:url" content="https://2flagshome.com/">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%236B1E2E' stroke='%23E3CB94' stroke-width='2'/%3E%3Ctext x='19' y='42' font-family='Georgia,serif' font-size='30' fill='%23F7F5F0'%3EL%3C/text%3E%3Ctext x='33' y='47' font-family='Georgia,serif' font-size='30' fill='%23E3CB94'%3EP%3C/text%3E%3C/svg%3E">
@@ -16,149 +19,13 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap">
-<style>
-/* Layout: editorial single page; ivory paper sections framed in thin gold, one deep bordô band for 2FlagsHome. Single brand look by choice. */
-:root{
- --bordo:#6B1E2E; --bordo-deep:#4A1320; --gold:#B08A3E; --gold-soft:#E3CB94; --ivory:#F7F5F0; --rose:#EBDCDF; --ink:#2A1A1E; --muted:#6E5A5F; --line:rgba(176,138,62,.45);
- --display:"Cormorant Garamond",Garamond,"Times New Roman",serif; --body:"Montserrat","Helvetica Neue",Arial,sans-serif;
- color-scheme:light;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.65;margin:0}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding-inline:24px}
-h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;text-wrap:balance;color:var(--bordo)}
-em{font-style:italic;color:var(--gold)}
-.eyebrow{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0}
-.mono{width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:600;font-size:26px;line-height:1;flex:none;background:var(--bordo)}
-.mono b{color:var(--ivory);position:relative;top:-2px;font-weight:600}.mono i{color:var(--gold-soft);font-style:normal;margin-left:-3px;position:relative;top:4px}
-/* header */
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(247,245,240,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand span{font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--bordo)}
-.nav nav{display:flex;gap:22px;flex-wrap:wrap}
-.nav nav a{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
-.nav nav a:hover,.nav nav a:focus-visible{color:var(--bordo)}
-@media (max-width:760px){.nav nav{display:none}}
-/* hero */
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-block:64px 72px}
-.hero h1{font-size:clamp(42px,6vw,74px);margin-top:18px}
-.hero h1 em{display:block;font-weight:500}
-.lead{font-size:17px;max-width:34em;color:var(--muted);margin:22px 0 30px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:14px 24px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--bordo)}
-.btn.solid{background:var(--bordo);color:var(--ivory)}
-.btn.ghost{color:var(--bordo)}
-.btn:hover{filter:brightness(1.08)} .btn:focus-visible,.more:focus-visible,.link-card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.portrait{position:relative;margin:0;max-width:420px;justify-self:end;width:100%}
-.portrait::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--gold)}
-.portrait img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
-.portrait figcaption{position:absolute;left:-14px;bottom:28px;background:var(--bordo);color:var(--ivory);padding:12px 18px;border-left:3px solid var(--gold-soft)}
-.portrait figcaption b{display:block;font-family:var(--display);font-size:22px;font-weight:600}
-.portrait figcaption span{font-size:10px;letter-spacing:.2em;color:var(--rose)}
-@media (max-width:860px){.hero{grid-template-columns:1fr;gap:44px;padding-block:40px 56px}.portrait{justify-self:center;max-width:340px}}
-/* links */
-section{padding-block:72px;scroll-margin-top:70px}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:34px}
-.sec-head h2{font-size:clamp(32px,4vw,48px);margin-top:10px}
-.links{border-block:1px solid var(--line);padding-block:44px;background:#FBFAF7}
-.link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.link-card{display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid var(--line);background:var(--ivory);text-decoration:none;min-width:0;transition:border-color .2s,transform .2s}
-.link-card:hover{border-color:var(--bordo);transform:translateY(-2px)}
-.link-card .k{font-size:10px;font-weight:700;letter-spacing:.22em;color:var(--gold)}
-.link-card .t{font-family:var(--display);font-size:26px;font-weight:600;color:var(--bordo);line-height:1.1;overflow-wrap:anywhere}
-.link-card .d{font-size:13px;color:var(--muted)}
-.link-card .go{margin-top:auto;font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--bordo)}
-@media (max-width:820px){.link-grid{grid-template-columns:1fr}}
-/* properties */
-.props{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-.prop{background:#FFFFFF;border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
-.ph{position:relative}
-.ph img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
-.badge{position:absolute;left:14px;top:14px;background:var(--ivory);color:var(--bordo);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:7px 11px}
-.badge.static{position:static;display:inline-block;align-self:flex-start;background:var(--rose)}
-.pb{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
-.loc{margin:0;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-.prop h3{font-size:26px}
-.spec{margin:0;font-size:13px;color:var(--muted)}
-.pf{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:10px;padding-top:12px;border-top:1px solid var(--line)}
-.price{font-family:var(--display);font-size:24px;font-weight:700;color:var(--ink);font-variant-numeric:lining-nums tabular-nums}
-.ref{font-size:10px;letter-spacing:.14em;color:var(--muted)}
-.more{margin-top:auto;padding-top:12px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bordo);text-decoration:none}
-.prop.plain{background:var(--rose);border-color:transparent}
-.prop.plain .pb{padding-top:26px}
-@media (max-width:1100px){.props{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:620px){.props{grid-template-columns:1fr}}
-/* about */
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
-.about figure{margin:0;position:relative;max-width:360px}
-.about figure img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 40%}
-.about figure figcaption{position:absolute;left:16px;bottom:16px;background:var(--bordo);color:var(--ivory);padding:10px 14px;font-size:10px;font-weight:700;letter-spacing:.18em}
-.about h2{font-size:clamp(32px,4vw,46px);margin:10px 0 18px}
-.about p{max-width:36em;margin:0 0 14px}
-.quote{font-family:var(--display);font-style:italic;font-size:24px;line-height:1.3;color:var(--bordo);border-left:2px solid var(--gold);padding-left:18px;margin:22px 0}
-@media (max-width:860px){.about{grid-template-columns:1fr;gap:32px}.about figure{max-width:100%}}
-.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
-.svc{padding:26px 26px 6px 0;min-width:0}
-.svc+.svc{padding-left:26px;border-left:1px solid var(--line)}
-.svc h3{font-size:28px;margin-bottom:8px}
-.svc p{margin:0;color:var(--muted);font-size:14px}
-@media (max-width:760px){.services{grid-template-columns:1fr}.svc+.svc{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
-/* 2FlagsHome */
-.flags{background:var(--bordo-deep);background-image:radial-gradient(ellipse at 20% 0%,#7A2436 0%,rgba(122,36,54,0) 60%);color:var(--ivory)}
-.flags .frame{border:1px solid var(--gold-soft);padding:clamp(24px,5vw,56px)}
-.flags h2{color:var(--ivory);font-size:clamp(36px,5vw,60px)}
-.flags h2 em{color:var(--gold-soft)}
-.flags .eyebrow{color:var(--gold-soft)}
-.fl-top{display:flex;justify-content:space-between;gap:20px;align-items:start;flex-wrap:wrap}
-.lang{display:flex;border:1px solid var(--gold-soft)}
-.lang button{background:transparent;color:var(--rose);border:0;padding:9px 14px;font:700 11px/1 var(--body);letter-spacing:.16em;cursor:pointer}
-.lang button[aria-pressed="true"]{background:var(--gold-soft);color:var(--bordo-deep)}
-.lang button:focus-visible{outline:2px solid var(--ivory);outline-offset:2px}
-.fl-lead{font-size:17px;color:var(--rose);max-width:40em;margin:20px 0 32px}
-.fl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;border-top:1px solid rgba(227,203,148,.35);padding-top:26px}
-.fl-grid h3{color:var(--gold-soft);font-size:22px;margin-bottom:6px}
-.fl-grid p{margin:0;font-size:13px;color:var(--rose)}
-.fl-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:34px}
-.fl-foot .btn{background:var(--ivory);color:var(--bordo);border-color:var(--ivory)}
-.soon{font-size:11px;letter-spacing:.16em;color:var(--gold-soft)}
-@media (max-width:900px){.fl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:520px){.fl-grid{grid-template-columns:1fr}}
-/* contact */
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.contact h2{font-size:clamp(34px,4.5vw,54px);margin:10px 0 14px}
-.rows{border-top:1px solid var(--line)}
-.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.row .lbl{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
-.row .val{font-family:var(--display);font-size:24px;font-weight:600;color:var(--bordo);user-select:all;overflow-wrap:anywhere;min-width:0}
-.copy{background:transparent;border:1px solid var(--line);color:var(--bordo);font:600 10px/1 var(--body);letter-spacing:.14em;padding:8px 10px;cursor:pointer}
-.copy:focus-visible{outline:2px solid var(--gold)}
-@media (max-width:760px){.contact{grid-template-columns:1fr}}
-/* contact form (Netlify Forms) */
-.form{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
-.form .full{grid-column:1/-1}
-.form label{display:flex;flex-direction:column;gap:6px;font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;min-width:0}
-.form input,.form select,.form textarea{font:400 15px/1.4 var(--body);color:var(--ink);background:#FFFFFF;border:1px solid var(--line);border-radius:0;padding:12px 14px;width:100%;letter-spacing:normal;text-transform:none}
-.form textarea{min-height:130px;resize:vertical}
-.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
-.form .btn{cursor:pointer;justify-self:start;font-family:var(--body)}
-.form .note{margin:0;font-size:12px;color:var(--muted)}
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-@media (max-width:520px){.form{grid-template-columns:1fr}}
-footer{background:var(--bordo);color:var(--rose);padding-block:34px}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:11px;letter-spacing:.14em}
-.foot img{width:96px;display:block}
-.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--bordo);color:var(--ivory);border:1px solid var(--gold-soft);padding:13px 18px;font:700 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;box-shadow:0 6px 18px rgba(74,19,32,.25)}.wa:focus-visible{outline:2px solid var(--gold)}
-</style>
+<link rel="stylesheet" href="/estilo.css">
 
 </head>
 <body>
 <header><div class="wrap nav">
  <a class="brand" href="#top"><span class="mono"><b>L</b><i>P</i></span><span>LILIANA PINTO</span></a>
- <nav aria-label="Secções"><a href="#imoveis">Imóveis</a><a href="#sobre">Sobre mim</a><a href="#2flagshome">2FlagsHome</a><a href="#contacto">Contacto</a></nav>
+ <nav aria-label="Secções"><a href="#imoveis">Imóveis</a><a href="#sobre">Sobre mim</a><a href="#2flagshome">2FlagsHome</a><a href="#contacto">Contacto</a><a class="nav-lang" href="/en/" hreflang="en" lang="en">EN</a><a class="nav-lang" href="/fr/" hreflang="fr" lang="fr">FR</a></nav>
 </div></header>
 
 <main id="top">
@@ -184,41 +51,39 @@ footer{background:var(--bordo);color:var(--rose);padding-block:34px}
  <div class="sec-head"><div><p class="eyebrow">Disponíveis agora</p><h2>Imóveis em <em>destaque</em></h2></div><a class="btn ghost" href="https://www.dourolovers.com/pt/" target="_blank" rel="noopener">Todos os imóveis</a></div>
  <div class="props">
 <!--
-  IMÓVEIS · cada bloco <article> é um cartão.
-  Para acrescentar um imóvel: copie um bloco inteiro (de <article> até </article>),
-  cole-o onde quer que apareça e troque o texto, a foto e o link.
-  - Foto: ponha o ficheiro na pasta "imagens" e escreva o nome em src="imagens/...".
-  - Etiqueta: Venda, Arrendamento ou Trespasse.
-  - Sem foto: use o modelo "prop plain" (cartões rosa mais abaixo).
-  Para tirar um imóvel vendido: apague o bloco dele.
+  IMÓVEIS · os cartões entre INICIO e FIM são gerados automaticamente
+  a partir de dados/imoveis.json (python3 ferramentas/gerar.py).
+  Não edite aqui: mude o ficheiro de dados e volte a gerar.
 -->
+<!-- IMOVEIS:INICIO -->
 <article class="prop">
- <div class="ph"><img src="imagens/imovel-vyla-penedo.jpg" alt="T1+1 com terraço privado" loading="lazy"><span class="badge">Arrendamento</span></div>
- <div class="pb"><p class="loc">Condomínio Vyla Penedo · Valadares, Gaia</p><h3>T1+1 com terraço privado</h3><p class="spec">90 m² · terraço 28 m² · portaria 24 h</p>
+ <a class="ph" href="/imoveis/t1-1-terraco-vyla-penedo-valadares"><img src="imagens/imovel-vyla-penedo.jpg" alt="T1+1 com terraço privado" loading="lazy"><span class="badge">Arrendamento</span></a>
+ <div class="pb"><p class="loc">Condomínio Vyla Penedo · Valadares, Gaia</p><h3><a href="/imoveis/t1-1-terraco-vyla-penedo-valadares">T1+1 com terraço privado</a></h3><p class="spec">90 m² · terraço 28 m² · portaria 24 h</p>
  <div class="pf"><span class="price">Preço sob consulta</span><span class="ref">Ref. DL26-109</span></div>
- <a class="more" href="https://www.dourolovers.com/pt/property/29820177/" target="_blank" rel="noopener">Ver na Douro Lovers →</a></div></article>
+ <a class="more" href="/imoveis/t1-1-terraco-vyla-penedo-valadares">Ver imóvel →</a></div></article>
 <article class="prop">
- <div class="ph"><img src="imagens/imovel-t2-duplex-senhora-da-hora.jpg" alt="T2 duplex com garagem" loading="lazy"><span class="badge">Venda</span></div>
- <div class="pb"><p class="loc">Senhora da Hora · Matosinhos</p><h3>T2 duplex com garagem</h3><p class="spec">88 m² · 2 pisos · junto ao metro</p>
+ <a class="ph" href="/imoveis/t2-duplex-garagem-senhora-da-hora"><img src="imagens/imovel-t2-duplex-senhora-da-hora.jpg" alt="T2 duplex com garagem" loading="lazy"><span class="badge">Venda</span></a>
+ <div class="pb"><p class="loc">Senhora da Hora · Matosinhos</p><h3><a href="/imoveis/t2-duplex-garagem-senhora-da-hora">T2 duplex com garagem</a></h3><p class="spec">88 m² · 2 pisos · garagem · junto ao metro</p>
  <div class="pf"><span class="price">399.000 €</span><span class="ref">Ref. DL26-121</span></div>
- <a class="more" href="https://www.dourolovers.com/pt/property/30429790/" target="_blank" rel="noopener">Ver na Douro Lovers →</a></div></article>
+ <a class="more" href="/imoveis/t2-duplex-garagem-senhora-da-hora">Ver imóvel →</a></div></article>
 <article class="prop">
- <div class="ph"><img src="imagens/imovel-moradia-senhor-da-pedra.jpg" alt="Moradia T3 renovada" loading="lazy"><span class="badge">Arrendamento</span></div>
- <div class="pb"><p class="loc">Praia do Senhor da Pedra</p><h3>Moradia T3 renovada</h3><p class="spec">3 quartos · 2 pátios · a 5 min da praia</p>
+ <a class="ph" href="/imoveis/moradia-t3-renovada-senhor-da-pedra"><img src="imagens/imovel-moradia-senhor-da-pedra.jpg" alt="Moradia T3 renovada" loading="lazy"><span class="badge">Arrendamento</span></a>
+ <div class="pb"><p class="loc">Praia do Senhor da Pedra · Gaia</p><h3><a href="/imoveis/moradia-t3-renovada-senhor-da-pedra">Moradia T3 renovada</a></h3><p class="spec">3 quartos · 2 pátios · a 5 min da praia</p>
  <div class="pf"><span class="price">2.500 €/mês</span></div>
- <a class="more" href="https://www.dourolovers.com/pt/property/30401286/" target="_blank" rel="noopener">Ver na Douro Lovers →</a></div></article>
+ <a class="more" href="/imoveis/moradia-t3-renovada-senhor-da-pedra">Ver imóvel →</a></div></article>
 <article class="prop">
- <div class="ph"><img src="imagens/imovel-moradia-conlelas.jpg" alt="Moradia com terreno" loading="lazy"><span class="badge">Venda</span></div>
- <div class="pb"><p class="loc">Conlelas · Bragança</p><h3>Moradia com terreno</h3><p class="spec">2.190 m² de terreno · garagem</p>
+ <a class="ph" href="/imoveis/moradia-com-terreno-conlelas-braganca"><img src="imagens/imovel-moradia-conlelas.jpg" alt="Moradia com terreno" loading="lazy"><span class="badge">Venda</span></a>
+ <div class="pb"><p class="loc">Conlelas · Bragança</p><h3><a href="/imoveis/moradia-com-terreno-conlelas-braganca">Moradia com terreno</a></h3><p class="spec">2.190 m² de terreno · garagem</p>
  <div class="pf"><span class="price">159.900 €</span></div>
- <a class="more" href="https://www.dourolovers.com/pt/property/22958660/" target="_blank" rel="noopener">Ver na Douro Lovers →</a></div></article>
+ <a class="more" href="/imoveis/moradia-com-terreno-conlelas-braganca">Ver imóvel →</a></div></article>
 <article class="prop">
- <div class="ph"><img src="imagens/imovel-lavandaria-coimbroes.jpg" alt="Lavandaria em Coimbrões" loading="lazy" style="object-position:40% 50%"><span class="badge">Trespasse</span></div>
- <div class="pb"><p class="loc">Coimbrões · Gaia</p><h3>Lavandaria industrial e tradicional</h3><p class="spec">52 m² com mezanino · equipamento completo · clientes fixos de alojamento local</p>
+ <a class="ph" href="/imoveis/lavandaria-trespasse-coimbroes-gaia"><img src="imagens/imovel-lavandaria-coimbroes.jpg" alt="Lavandaria em Coimbrões" loading="lazy" style="object-position:40% 50%"><span class="badge">Trespasse</span></a>
+ <div class="pb"><p class="loc">Coimbrões · Gaia</p><h3><a href="/imoveis/lavandaria-trespasse-coimbroes-gaia">Lavandaria industrial e tradicional</a></h3><p class="spec">52 m² com mezanino · equipamento completo · clientes fixos de alojamento local</p>
  <div class="pf"><span class="price">59.000 €</span><span class="ref">Ref. DL26-105</span></div>
- <a class="more" href="https://www.dourolovers.com/pt/property/29810684/" target="_blank" rel="noopener">Ver na Douro Lovers →</a></div></article>
-<article class="prop plain"><div class="pb"><span class="badge static">Venda</span><p class="loc">Avenida da República · Gaia</p><h3>T3 duplex no último piso</h3><p class="spec">125 m² · suite + 2 quartos · 3 casas de banho · sol da tarde · metro à porta</p><div class="pf"><span class="price">410.000 €</span><span class="ref">Ref. DL26-54</span></div><a class="more" href="https://www.dourolovers.com/pt/property/28583249/" target="_blank" rel="noopener">Ver na Douro Lovers →</a></div></article>
-<article class="prop plain"><div class="pb"><span class="badge static">Venda</span><p class="loc">Conlelas · Bragança</p><h3>Terreno agrícola</h3><p class="spec">32.630 m² com castanheiros, três parcelas, frente para a estrada</p><div class="pf"><span class="price">65.000 €</span><span class="ref">Ref. DL23-161</span></div><a class="more" href="https://www.dourolovers.com/pt/property/22958607/" target="_blank" rel="noopener">Ver na Douro Lovers →</a></div></article>
+ <a class="more" href="/imoveis/lavandaria-trespasse-coimbroes-gaia">Ver imóvel →</a></div></article>
+<article class="prop plain"><div class="pb"><span class="badge static">Venda</span><p class="loc">Avenida da República · Gaia</p><h3><a href="/imoveis/t3-duplex-ultimo-piso-avenida-da-republica-gaia">T3 duplex no último piso</a></h3><p class="spec">125 m² · suite + 2 quartos · 3 casas de banho · sol da tarde · metro à porta</p><div class="pf"><span class="price">410.000 €</span><span class="ref">Ref. DL26-54</span></div><a class="more" href="/imoveis/t3-duplex-ultimo-piso-avenida-da-republica-gaia">Ver imóvel →</a></div></article>
+<article class="prop plain"><div class="pb"><span class="badge static">Venda</span><p class="loc">Conlelas · Bragança</p><h3><a href="/imoveis/terreno-agricola-castanheiros-conlelas-braganca">Terreno agrícola</a></h3><p class="spec">32.630 m² · castanheiros · três parcelas · frente para a estrada</p><div class="pf"><span class="price">65.000 €</span><span class="ref">Ref. DL23-161</span></div><a class="more" href="/imoveis/terreno-agricola-castanheiros-conlelas-braganca">Ver imóvel →</a></div></article>
+<!-- IMOVEIS:FIM -->
 <article class="prop plain" style="background:var(--bordo);color:var(--ivory)"><div class="pb"><p class="loc" style="color:var(--gold-soft)">Proprietários</p><h3 style="color:var(--ivory)">Quer vender ou arrendar a sua casa?</h3><p class="spec" style="color:var(--rose)">Faço a avaliação, as fotografias e o vídeo, e divulgo o seu imóvel nos portais e nas redes.</p><a class="more" href="#contacto" data-interesse="Quero vender ou pedir avaliação" style="color:var(--gold-soft)">Pedir avaliação →</a></div></article></div>
 </div></section>
 
@@ -253,7 +118,7 @@ footer{background:var(--bordo);color:var(--rose);padding-block:34px}
    <div><h3>Paperwork</h3><p>Guidance on tax number, bank account and contracts, with trusted lawyers and translators.</p></div>
    <div><h3>Keys</h3><p>Support through the deed or lease, and after you move in.</p></div>
   </div>
-  <div class="fl-foot"><span class="soon">FULL 2FLAGSHOME PAGE COMING SOON</span><a class="btn" href="#contacto" data-interesse="2FlagsHome · International client">Talk to me</a></div>
+  <div class="fl-foot"><a class="soon" href="/en/" style="text-decoration:underline;text-underline-offset:4px">READ THE FULL GUIDE IN ENGLISH →</a><a class="btn" href="#contacto" data-interesse="2FlagsHome · International client">Talk to me</a></div>
  </div>
  <div data-lang="fr" hidden>
   <h2 style="margin-top:14px">Votre maison au Portugal, <em>où que vous viviez.</em></h2>
@@ -264,7 +129,7 @@ footer{background:var(--bordo);color:var(--rose);padding-block:34px}
    <div><h3>Démarches</h3><p>NIF, compte bancaire et contrats, avec des avocats et traducteurs de confiance.</p></div>
    <div><h3>Clés</h3><p>Accompagnement jusqu'à l'acte ou au bail, et après votre arrivée.</p></div>
   </div>
-  <div class="fl-foot"><span class="soon">PAGE 2FLAGSHOME COMPLÈTE BIENTÔT</span><a class="btn" href="#contacto" data-interesse="2FlagsHome · International client">Me contacter</a></div>
+  <div class="fl-foot"><a class="soon" href="/fr/" style="text-decoration:underline;text-underline-offset:4px">LIRE LE GUIDE COMPLET EN FRANÇAIS →</a><a class="btn" href="#contacto" data-interesse="2FlagsHome · International client">Me contacter</a></div>
  </div>
  <div data-lang="pt" hidden>
   <h2 style="margin-top:14px">A sua casa em Portugal, <em>esteja onde estiver.</em></h2>
@@ -275,7 +140,7 @@ footer{background:var(--bordo);color:var(--rose);padding-block:34px}
    <div><h3>Papelada</h3><p>NIF, conta bancária e contratos, com advogados e tradutores de confiança.</p></div>
    <div><h3>Chaves</h3><p>Apoio até à escritura ou ao contrato, e depois da mudança.</p></div>
   </div>
-  <div class="fl-foot"><span class="soon">PÁGINA 2FLAGSHOME EM BREVE</span><a class="btn" href="#contacto" data-interesse="2FlagsHome · International client">Falar comigo</a></div>
+  <div class="fl-foot"><span class="soon">PÁGINA COMPLETA: <a href="/en/" style="color:inherit">ENGLISH</a> · <a href="/fr/" style="color:inherit">FRANÇAIS</a></span><a class="btn" href="#contacto" data-interesse="2FlagsHome · International client">Falar comigo</a></div>
  </div>
 </div></div></section>
 

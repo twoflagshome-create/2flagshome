@@ -57,6 +57,16 @@ def pagina(i, todos):
         imagem = f'<figure class="im-foto"><img src="/imagens/{e(i["foto"])}" alt="{e(i["alt"])}"{pos}><span class="badge">{e(i["negocio"])}</span></figure>'
     else:
         imagem = f'<div class="im-foto im-sem-foto"><span class="badge">{e(i["negocio"])}</span><p>{e(i["titulo"])}</p></div>'
+    secoes = ""
+    for sec in i.get("secoes", []):
+        corpo = f'<p>{e(sec["texto"])}</p>' if sec.get("texto") else ""
+        if sec.get("itens"):
+            corpo += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in sec["itens"]) + "</ul>"
+        if sec.get("texto_fim"):
+            corpo += f'<p>{e(sec["texto_fim"])}</p>'
+        secoes += f'<div class="im-sec"><h2>{e(sec["titulo"])}</h2>{corpo}</div>'
+    if secoes:
+        secoes = f'<section class="im-detalhes"><div class="wrap"><div class="im-secs">{secoes}</div></div></section>'
     outros = [o for o in todos if o["slug"] != i["slug"]][:3]
     outros_html = "\n".join(cartao(o).replace('src="imagens/', 'src="/imagens/') for o in outros)
     dados = {
@@ -112,6 +122,7 @@ def pagina(i, todos):
   <p class="im-lang">English or French? <a href="/en/#contact">I can help in your language.</a></p>
  </div>
 </div>
+{secoes}
 <section id="pedido" class="im-pedido"><div class="wrap contact">
  <div><p class="eyebrow">Visitas e informações</p><h2>Quer ver <em>este imóvel?</em></h2><p class="lead" style="margin:0">Deixe o seu contacto e eu ligo-lhe para combinar a visita, presencial ou por videochamada. Respondo no próprio dia.</p></div>
  <form class="form" name="imovel" method="POST" action="/obrigado" data-netlify="true" netlify-honeypot="bot-field">

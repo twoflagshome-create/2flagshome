@@ -1,23 +1,75 @@
 [
   {
     "slug": "t1-1-terraco-vyla-penedo-valadares",
-    "titulo": "T1+1 com terraço privado",
+    "titulo": "T1+1 com terraço de 28 m²",
     "negocio": "Arrendamento",
     "local": "Condomínio Vyla Penedo · Valadares, Gaia",
-    "caracteristicas": ["90 m²", "terraço 28 m²", "portaria 24 h"],
-    "preco": "Preço sob consulta",
-    "ref": "DL26-109",
+    "caracteristicas": [
+      "90 m²",
+      "terraço 28 m²",
+      "suite",
+      "garagem em box",
+      "segurança 24 h",
+      "disponível já"
+    ],
+    "preco": "1.150 €/mês",
+    "ref": "DL26-126",
     "foto": "imovel-vyla-penedo.jpg",
-    "alt": "T1+1 com terraço privado",
+    "alt": "T1+1 com terraço no condomínio Vyla Penedo, Valadares",
     "douro_lovers": "https://www.dourolovers.com/pt/property/30545409/",
-    "descricao": "T1+1 para arrendamento no Condomínio Vyla Penedo, em Valadares, Vila Nova de Gaia. São 90 m² com um terraço privado de 28 m², num condomínio com portaria 24 horas."
+    "descricao": "Disponível de imediato. Apartamento T1+1 com 90 m² no condomínio fechado Vyla Penedo, em Valadares. Tem segurança 24 horas, áreas amplas e um terraço privativo com ligação direta à sala, à cozinha e à suite.",
+    "secoes": [
+      {
+        "titulo": "O apartamento",
+        "itens": [
+          "Tipologia: T1+1 versátil. A divisão “+1” funciona como escritório, quarto de hóspedes ou quarto de criança.",
+          "Área útil: 90 m²",
+          "Instalações sanitárias: suite com casa de banho completa e uma segunda casa de banho com base de duche, que serve a zona social e a divisão “+1”",
+          "Terraço privativo: 28 m², com acesso a partir da sala, da cozinha e da suite. Ideal para refeições ao ar livre e momentos de descanso.",
+          "Conforto: aquecimento central, lavandaria e boa capacidade de arrumação",
+          "Orientação: nascente, com luz natural ao longo da manhã",
+          "Estacionamento: garagem em box incluída"
+        ]
+      },
+      {
+        "titulo": "O condomínio Vyla Penedo",
+        "itens": [
+          "Portaria com segurança e porteiro 24 horas",
+          "Amplos espaços verdes e jardins cuidados",
+          "Parque infantil privativo"
+        ]
+      },
+      {
+        "titulo": "Localização",
+        "texto": "Na Rua Professor Amadeu Santos, em Valadares:",
+        "itens": [
+          "a poucos minutos dos acessos à A29 e à A1",
+          "perto da estação de comboio de Valadares",
+          "perto de comércio, serviços e escolas",
+          "a curta distância das praias de Gaia"
+        ]
+      },
+      {
+        "titulo": "Condições",
+        "itens": [
+          "Renda mensal: 1.150 €",
+          "Disponibilidade: imediata"
+        ],
+        "texto_fim": "Visitas mediante marcação. Contacte-me para mais informações ou para agendar a sua visita."
+      }
+    ]
   },
   {
     "slug": "t2-duplex-garagem-senhora-da-hora",
     "titulo": "T2 duplex com garagem",
     "negocio": "Venda",
     "local": "Senhora da Hora · Matosinhos",
-    "caracteristicas": ["88 m²", "2 pisos", "garagem", "junto ao metro"],
+    "caracteristicas": [
+      "88 m²",
+      "2 pisos",
+      "garagem",
+      "junto ao metro"
+    ],
     "preco": "399.000 €",
     "ref": "DL26-121",
     "foto": "imovel-t2-duplex-senhora-da-hora.jpg",
@@ -30,7 +82,11 @@
     "titulo": "Moradia T3 renovada",
     "negocio": "Arrendamento",
     "local": "Praia do Senhor da Pedra · Gaia",
-    "caracteristicas": ["3 quartos", "2 pátios", "a 5 min da praia"],
+    "caracteristicas": [
+      "3 quartos",
+      "2 pátios",
+      "a 5 min da praia"
+    ],
     "preco": "2.500 €/mês",
     "ref": "",
     "foto": "imovel-moradia-senhor-da-pedra.jpg",
@@ -43,7 +99,10 @@
     "titulo": "Moradia com terreno",
     "negocio": "Venda",
     "local": "Conlelas · Bragança",
-    "caracteristicas": ["2.190 m² de terreno", "garagem"],
+    "caracteristicas": [
+      "2.190 m² de terreno",
+      "garagem"
+    ],
     "preco": "159.900 €",
     "ref": "",
     "foto": "imovel-moradia-conlelas.jpg",
@@ -56,7 +115,11 @@
     "titulo": "Lavandaria industrial e tradicional",
     "negocio": "Trespasse",
     "local": "Coimbrões · Gaia",
-    "caracteristicas": ["52 m² com mezanino", "equipamento completo", "clientes fixos de alojamento local"],
+    "caracteristicas": [
+      "52 m² com mezanino",
+      "equipamento completo",
+      "clientes fixos de alojamento local"
+    ],
     "preco": "59.000 €",
     "ref": "DL26-105",
     "foto": "imovel-lavandaria-coimbroes.jpg",
@@ -70,7 +133,13 @@
     "titulo": "T3 duplex no último piso",
     "negocio": "Venda",
     "local": "Avenida da República · Gaia",
-    "caracteristicas": ["125 m²", "suite + 2 quartos", "3 casas de banho", "sol da tarde", "metro à porta"],
+    "caracteristicas": [
+      "125 m²",
+      "suite + 2 quartos",
+      "3 casas de banho",
+      "sol da tarde",
+      "metro à porta"
+    ],
     "preco": "410.000 €",
     "ref": "DL26-54",
     "foto": "",
@@ -83,7 +152,12 @@
     "titulo": "Terreno agrícola",
     "negocio": "Venda",
     "local": "Conlelas · Bragança",
-    "caracteristicas": ["32.630 m²", "castanheiros", "três parcelas", "frente para a estrada"],
+    "caracteristicas": [
+      "32.630 m²",
+      "castanheiros",
+      "três parcelas",
+      "frente para a estrada"
+    ],
     "preco": "65.000 €",
     "ref": "DL23-161",
     "foto": "",

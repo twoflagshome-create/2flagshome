@@ -198,3 +198,13 @@ a.ph{display:block}
 .form-escuro input,.form-escuro select,.form-escuro textarea{border-color:rgba(227,203,148,.5)}
 .form-escuro .btn{background:var(--ivory);color:var(--bordo);border-color:var(--ivory)}
 @media (max-width:900px){.procura{grid-template-columns:1fr;gap:28px}}
+/* detalhes do imóvel */
+.im-detalhes{padding-top:0}
+.im-secs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 48px;border-top:1px solid var(--line);padding-top:36px}
+.im-sec{min-width:0}
+.im-sec h2{font-size:30px;margin-bottom:12px}
+.im-sec p{margin:0 0 10px;color:var(--ink)}
+.im-sec ul{margin:0;padding-left:18px;color:var(--muted)}
+.im-sec li{margin-bottom:6px}
+.im-sec li::marker{color:var(--gold)}
+@media (max-width:760px){.im-secs{grid-template-columns:1fr}}

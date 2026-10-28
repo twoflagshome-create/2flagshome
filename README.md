@@ -14,3 +14,5 @@ O formulário "contacto" usa o Netlify Forms. Os pedidos aparecem em Netlify, no
 1. Ponha a foto em `site/imagens/` (nome sem espaços nem acentos, por exemplo `imovel-t3-gaia.jpg`).
 2. Em `site/index.html`, copie um bloco `<article class="prop"> ... </article>` e troque a foto, a etiqueta (Venda / Arrendamento / Trespasse), a zona, o título, as características, o preço, a referência e o link da Douro Lovers.
 3. Para tirar um imóvel vendido, apague o bloco dele.
+
+Projeto Netlify: https://app.netlify.com/projects/lilianapinto

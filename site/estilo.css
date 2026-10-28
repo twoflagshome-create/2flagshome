@@ -208,3 +208,23 @@ a.ph{display:block}
 .im-sec li{margin-bottom:6px}
 .im-sec li::marker{color:var(--gold)}
 @media (max-width:760px){.im-secs{grid-template-columns:1fr}}
+
+/* Guias (site/en/guides/) */
+.guia{padding-block:8px 64px}
+.guia .wrap{max-width:780px}
+.guia h1{font-size:clamp(38px,6vw,58px);margin:10px 0 18px}
+.guia h2{font-size:clamp(28px,4vw,36px);margin:44px 0 12px;display:flex;align-items:baseline;gap:14px;scroll-margin-top:90px}
+.guia h2 .n{font-size:.9em;color:var(--gold)}
+.guia p:not(.eyebrow),.guia li{font-size:16px}
+.guia ul,.guia ol{padding-left:22px}
+.guia li{margin-bottom:6px}
+.guia-autor{color:var(--muted);font-size:14px!important;border-left:2px solid var(--gold);padding-left:14px}
+.guia-indice{border:1px solid var(--line);background:#FBFAF7;padding:18px 22px;margin:28px 0}
+.guia-indice .lbl{margin:0 0 6px;font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.guia-indice ol{margin:0;columns:2;column-gap:28px}
+.guia-indice li{font-size:14px;break-inside:avoid}
+.guia-caixa{background:#FBFAF7;border:1px solid var(--line);padding:6px 24px 18px;margin-top:44px;scroll-margin-top:90px}
+.guia-caixa h2{margin-top:24px}
+.guia .faq summary{font-size:22px}
+.guia-nota{color:var(--muted);font-size:13px!important;margin-top:36px}
+@media (max-width:640px){.guia-indice ol{columns:1}.guia-caixa{padding-inline:16px}}

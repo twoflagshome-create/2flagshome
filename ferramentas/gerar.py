@@ -157,6 +157,7 @@ def pagina(i, todos):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/estilo.css">
 <script type="application/ld+json">{json.dumps(dados, ensure_ascii=False)}</script>
+<script src="/analytics.js" defer></script>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -202,7 +203,7 @@ def pagina(i, todos):
 </div></section>
 </main>
 <a class="wa" href="{e(wa)}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
-<footer><div class="wrap foot"><div style="display:flex;align-items:center;gap:14px"><span class="mono"><b>L</b><i>P</i></span><span>LILIANA PINTO · CONSULTORA IMOBILIÁRIA</span></div><img src="/imagens/logo-douro-lovers.png" alt="Douro Lovers"><span>AMI 18696</span></div></footer>
+<footer><div class="wrap foot"><div style="display:flex;align-items:center;gap:14px"><span class="mono"><b>L</b><i>P</i></span><span>LILIANA PINTO · CONSULTORA IMOBILIÁRIA</span></div><img src="/imagens/logo-douro-lovers.png" alt="Douro Lovers"><span>AMI 18696</span><a href="#" data-cookies style="color:inherit">Cookies</a></div></footer>
 </body>
 </html>
 """
@@ -244,6 +245,7 @@ def pagina_en(i, todos):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/estilo.css">
 <script type="application/ld+json">{json.dumps(dados, ensure_ascii=False)}</script>
+<script src="/analytics.js" defer></script>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -291,7 +293,7 @@ def pagina_en(i, todos):
 </div></section>
 </main>
 <a class="wa" href="{e(wa)}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
-<footer><div class="wrap foot"><div style="display:flex;align-items:center;gap:14px"><span class="mono"><b>L</b><i>P</i></span><span>2FLAGSHOME · LILIANA PINTO · LICENSED REAL ESTATE CONSULTANT</span></div><img src="/imagens/logo-douro-lovers.png" alt="Douro Lovers"><span>AMI 18696</span></div></footer>
+<footer><div class="wrap foot"><div style="display:flex;align-items:center;gap:14px"><span class="mono"><b>L</b><i>P</i></span><span>2FLAGSHOME · LILIANA PINTO · LICENSED REAL ESTATE CONSULTANT</span></div><img src="/imagens/logo-douro-lovers.png" alt="Douro Lovers"><span>AMI 18696</span><a href="#" data-cookies style="color:inherit">Cookies</a></div></footer>
 </body>
 </html>
 """

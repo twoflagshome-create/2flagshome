@@ -114,6 +114,63 @@
           "texto_fim": "Viewings by appointment, in person or by video call. Get in touch for more information or to book a viewing."
         }
       ]
+    },
+    "fr": {
+      "slug": "appartement-1-chambre-bureau-terrasse-vyla-penedo-valadares",
+      "titulo": "1 chambre + bureau, terrasse de 28 m²",
+      "negocio": "À louer",
+      "local": "Résidence fermée Vyla Penedo · Valadares, Gaia",
+      "caracteristicas": [
+        "90 m²",
+        "terrasse 28 m²",
+        "suite parentale",
+        "box fermé",
+        "sécurité 24 h",
+        "disponible immédiatement"
+      ],
+      "preco": "1 150 €/mois",
+      "alt": "Appartement avec terrasse dans la résidence Vyla Penedo, Valadares",
+      "descricao": "Disponible immédiatement. Appartement de 90 m² avec une chambre et une pièce supplémentaire (T1+1), dans la résidence fermée Vyla Penedo, à Valadares. Sécurité 24 h/24, beaux volumes et une terrasse privative qui donne sur le séjour, la cuisine et la suite.",
+      "secoes": [
+        {
+          "titulo": "L'appartement",
+          "itens": [
+            "Typologie : un T1+1 polyvalent. La pièce supplémentaire peut servir de bureau, de chambre d'amis ou de chambre d'enfant.",
+            "Surface habitable : 90 m²",
+            "Salles de bains : une suite avec salle de bains complète et une deuxième salle d'eau avec douche, qui dessert le séjour et la pièce supplémentaire",
+            "Terrasse privative : 28 m², accessible depuis le séjour, la cuisine et la suite. Idéale pour les repas en plein air et les moments de détente.",
+            "Confort : chauffage central, buanderie et nombreux rangements",
+            "Orientation : est, avec la lumière naturelle toute la matinée",
+            "Stationnement : box fermé inclus"
+          ]
+        },
+        {
+          "titulo": "La résidence Vyla Penedo",
+          "itens": [
+            "Loge avec gardien et sécurité 24 h/24",
+            "Grands espaces verts et jardins entretenus",
+            "Aire de jeux privée"
+          ]
+        },
+        {
+          "titulo": "Emplacement",
+          "texto": "Rua Professor Amadeu Santos, à Valadares :",
+          "itens": [
+            "à quelques minutes des autoroutes A29 et A1",
+            "près de la gare de Valadares",
+            "près des commerces, services et écoles",
+            "à deux pas des plages de Gaia"
+          ]
+        },
+        {
+          "titulo": "Conditions",
+          "itens": [
+            "Loyer mensuel : 1 150 €",
+            "Disponibilité : immédiate"
+          ],
+          "texto_fim": "Visites sur rendez-vous, sur place ou par appel vidéo. Contactez-moi pour plus d'informations ou pour organiser une visite."
+        }
+      ]
     }
   },
   {
@@ -147,6 +204,21 @@
       "preco": "€399,000",
       "alt": "2-bedroom duplex with garage in Senhora da Hora",
       "descricao": "2-bedroom duplex for sale in Senhora da Hora, Matosinhos, on the edge of Porto. 88 m² over two floors, with a garage and the metro a few steps away."
+    },
+    "fr": {
+      "slug": "duplex-2-chambres-garage-senhora-da-hora-matosinhos",
+      "titulo": "Duplex 2 chambres avec garage",
+      "negocio": "À vendre",
+      "local": "Senhora da Hora · Matosinhos",
+      "caracteristicas": [
+        "88 m²",
+        "2 niveaux",
+        "garage",
+        "à côté du métro"
+      ],
+      "preco": "399 000 €",
+      "alt": "Duplex 2 chambres avec garage à Senhora da Hora",
+      "descricao": "Duplex de 2 chambres à vendre à Senhora da Hora, Matosinhos, aux portes de Porto. 88 m² sur deux niveaux, avec garage et le métro à quelques pas."
     }
   },
   {
@@ -178,6 +250,20 @@
       "preco": "€2,500/month",
       "alt": "Renovated 3-bedroom house near Senhor da Pedra beach",
       "descricao": "Renovated 3-bedroom house for rent near Senhor da Pedra beach, in Vila Nova de Gaia. Three bedrooms, two patios, and the beach five minutes away."
+    },
+    "fr": {
+      "slug": "maison-renovee-3-chambres-plage-senhor-da-pedra-gaia",
+      "titulo": "Maison rénovée 3 chambres",
+      "negocio": "À louer",
+      "local": "Plage de Senhor da Pedra · Gaia",
+      "caracteristicas": [
+        "3 chambres",
+        "2 patios",
+        "à 5 min de la plage"
+      ],
+      "preco": "2 500 €/mois",
+      "alt": "Maison rénovée 3 chambres près de la plage de Senhor da Pedra",
+      "descricao": "Maison rénovée de 3 chambres à louer près de la plage de Senhor da Pedra, à Vila Nova de Gaia. Trois chambres, deux patios et la plage à cinq minutes."
     }
   },
   {
@@ -207,6 +293,19 @@
       "preco": "€159,900",
       "alt": "House with land in Conlelas, Bragança",
       "descricao": "House for sale in Conlelas, Bragança, with 2,190 m² of land and a garage. A home with outdoor space in the quiet countryside of northern Portugal."
+    },
+    "fr": {
+      "slug": "maison-avec-terrain-conlelas-braganca",
+      "titulo": "Maison avec terrain",
+      "negocio": "À vendre",
+      "local": "Conlelas · Bragança",
+      "caracteristicas": [
+        "2 190 m² de terrain",
+        "garage"
+      ],
+      "preco": "159 900 €",
+      "alt": "Maison avec terrain à Conlelas, Bragança",
+      "descricao": "Maison à vendre à Conlelas, Bragança, avec 2 190 m² de terrain et un garage. Une maison avec de l'espace extérieur, au calme, dans la campagne du nord du Portugal."
     }
   },
   {
@@ -239,6 +338,20 @@
       "preco": "€59,000",
       "alt": "Laundry business in Coimbrões, Gaia",
       "descricao": "Running industrial and traditional laundry for sale (business transfer) in Coimbrões, Vila Nova de Gaia. 52 m² with a mezzanine, full equipment and regular holiday-rental clients."
+    },
+    "fr": {
+      "slug": "fonds-de-commerce-laverie-coimbroes-gaia",
+      "titulo": "Laverie industrielle et traditionnelle",
+      "negocio": "Fonds de commerce",
+      "local": "Coimbrões · Gaia",
+      "caracteristicas": [
+        "52 m² avec mezzanine",
+        "entièrement équipée",
+        "clients réguliers en location saisonnière"
+      ],
+      "preco": "59 000 €",
+      "alt": "Laverie à Coimbrões, Gaia",
+      "descricao": "Fonds de commerce d'une laverie industrielle et traditionnelle en activité à Coimbrões, Vila Nova de Gaia. 52 m² avec mezzanine, équipement complet et clientèle régulière de locations saisonnières."
     }
   },
   {
@@ -274,6 +387,22 @@
       "preco": "€410,000",
       "alt": "",
       "descricao": "3-bedroom duplex on the top floor, on Avenida da República in Vila Nova de Gaia, across the river from Porto. 125 m² with an en-suite, two more bedrooms, three bathrooms, afternoon sun and the metro at the door."
+    },
+    "fr": {
+      "slug": "duplex-3-chambres-dernier-etage-avenida-da-republica-gaia",
+      "titulo": "Duplex 3 chambres au dernier étage",
+      "negocio": "À vendre",
+      "local": "Avenida da República · Gaia",
+      "caracteristicas": [
+        "125 m²",
+        "suite + 2 chambres",
+        "3 salles de bains",
+        "soleil l'après-midi",
+        "métro en bas de chez vous"
+      ],
+      "preco": "410 000 €",
+      "alt": "",
+      "descricao": "Duplex de 3 chambres au dernier étage, sur l'Avenida da República à Vila Nova de Gaia, face à Porto de l'autre côté du fleuve. 125 m² avec une suite, deux autres chambres, trois salles de bains, le soleil l'après-midi et le métro en bas de chez vous."
     }
   },
   {
@@ -307,6 +436,21 @@
       "preco": "€65,000",
       "alt": "",
       "descricao": "Farmland in Conlelas, Bragança: 32,630 m² of chestnut trees, split into three plots, with road frontage."
+    },
+    "fr": {
+      "slug": "terrain-agricole-chataigniers-conlelas-braganca",
+      "titulo": "Terrain agricole avec châtaigniers",
+      "negocio": "À vendre",
+      "local": "Conlelas · Bragança",
+      "caracteristicas": [
+        "32 630 m²",
+        "châtaigniers",
+        "trois parcelles",
+        "accès direct à la route"
+      ],
+      "preco": "65 000 €",
+      "alt": "",
+      "descricao": "Terrain agricole à Conlelas, Bragança : 32 630 m² de châtaigniers, divisé en trois parcelles, avec accès direct à la route."
     }
   }
 ]

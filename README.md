@@ -14,14 +14,14 @@ O formulário "contacto" usa o Netlify Forms. Os pedidos aparecem em Netlify, no
 - `/` página principal (português)
 - `/en/` e `/fr/` página 2FlagsHome completa, em inglês e francês
 - `/imoveis/<nome>` uma página por imóvel, geradas automaticamente
-- `/en/homes/<name>` a mesma página de cada imóvel em inglês, também gerada automaticamente
+- `/en/homes/<name>` e `/fr/biens/<nom>` a mesma página de cada imóvel em inglês e em francês, também geradas automaticamente
 - `/en/guides/...` guias para clientes estrangeiros, escritos à mão (acrescentar cada novo guia à lista `GUIAS` em `ferramentas/gerar.py` para entrar no sitemap)
 
 ## Acrescentar ou tirar um imóvel
 
 1. Ponha a foto em `site/imagens/` (nome sem espaços nem acentos, por exemplo `imovel-t3-gaia.jpg`).
-2. Acrescente (ou apague) a entrada do imóvel em `dados/imoveis.json`, incluindo o campo `"en"` com os textos em inglês (sem ele o gerador pára e avisa).
-3. Corra `python3 ferramentas/gerar.py`. Isto cria as páginas dos imóveis em PT e EN, os cartões das páginas PT, EN e FR e o `sitemap.xml`.
+2. Acrescente (ou apague) a entrada do imóvel em `dados/imoveis.json`, incluindo os campos `"en"` e `"fr"` com os textos em inglês e francês (sem ele o gerador pára e avisa).
+3. Corra `python3 ferramentas/gerar.py`. Isto cria as páginas dos imóveis em PT, EN e FR, os cartões das páginas PT, EN e FR e o `sitemap.xml`.
 4. Guarde no GitHub. O Netlify publica sozinho.
 
 Projeto Netlify: https://app.netlify.com/projects/lilianapinto

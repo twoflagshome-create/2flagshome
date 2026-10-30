@@ -22,6 +22,14 @@ GUIAS = [
     {"en": "/en/guides/buying-costs-in-portugal", "fr": "/fr/guides/frais-achat-immobilier-portugal"},
 ]
 
+# Páginas de serviços escritas à mão em site/servicos/ (só em português, por agora)
+SERVICOS = [
+    {"pt": "/servicos/"},
+    {"pt": "/servicos/melhorias-para-vender"},
+    {"pt": "/servicos/pequenas-reparacoes"},
+    {"pt": "/servicos/gestao-de-arrendamento"},
+]
+
 COMO_CONHECEU = {
     "pt": ("Como me conheceu?", ["Pesquisa no Google", "Instagram", "Facebook", "LinkedIn", "Idealista ou outro portal", "Recomendação de alguém", "Outro"]),
     "en": ("How did you find me?", ["Google search", "Instagram", "Facebook", "LinkedIn", "Idealista or another property portal", "Someone recommended you", "Other"]),
@@ -411,7 +419,7 @@ def substituir(ficheiro, marca, conteudo):
 def sitemap(imoveis):
     hoje = datetime.date.today().isoformat()
     casa = {"pt": "/", "en": "/en/", "fr": "/fr/"}
-    grupos = [casa] + [{"pt": url_pt(i), "en": url_en(i), "fr": url_fr(i)} for i in imoveis] + GUIAS
+    grupos = [casa] + [{"pt": url_pt(i), "en": url_en(i), "fr": url_fr(i)} for i in imoveis] + GUIAS + SERVICOS
     entradas = []
     for g in grupos:
         alt = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{DOMINIO}{u}"/>' for l, u in g.items())

@@ -13,8 +13,12 @@
 <link rel="alternate" hreflang="pt" href="https://2flagshome.com/">
 <link rel="alternate" hreflang="en" href="https://2flagshome.com/en/">
 <link rel="alternate" hreflang="fr" href="https://2flagshome.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://2flagshome.com/en/">
 <meta property="og:url" content="https://2flagshome.com/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://2flagshome.com/imagens/liliana-retrato.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Liliana Pinto · Consultora Imobiliária", "url": "https://2flagshome.com/", "telephone": "+351934263986", "email": "lilianapinto@dourolovers.com", "image": "https://2flagshome.com/imagens/liliana-retrato.jpg", "areaServed": ["Porto", "Vila Nova de Gaia", "Matosinhos", "Douro", "Bragança"], "knowsLanguage": ["pt", "en", "fr"], "sameAs": ["https://www.instagram.com/lilianapinto.realestate/", "https://www.instagram.com/2flagshome/"], "parentOrganization": {"@type": "RealEstateAgent", "name": "Douro Lovers", "url": "https://www.dourolovers.com/"}}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%236B1E2E' stroke='%23E3CB94' stroke-width='2'/%3E%3Ctext x='19' y='42' font-family='Georgia,serif' font-size='30' fill='%23F7F5F0'%3EL%3C/text%3E%3Ctext x='33' y='47' font-family='Georgia,serif' font-size='30' fill='%23E3CB94'%3EP%3C/text%3E%3C/svg%3E">
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 
@@ -22,6 +26,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/estilo.css">
 
+<script src="/analytics.js" defer></script>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -114,6 +119,7 @@
   <label>Para quando<select name="prazo"><option>O mais depressa possível</option><option>Nos próximos 3 meses</option><option>Nos próximos 6 meses</option><option>Ainda estou a ver</option></select></label>
   <label>Precisa de crédito?<select name="credito"><option>Sim</option><option>Não</option><option>Ainda não sei</option></select></label>
   <label class="full">O que é importante para si<textarea name="mensagem" placeholder="Garagem, varanda, perto da escola ou do metro, vista…"></textarea></label>
+  <label class="full">Como me conheceu?<select name="como_conheceu"><option value="">—</option><option>Pesquisa no Google</option><option>Instagram</option><option>Facebook</option><option>LinkedIn</option><option>Idealista ou outro portal</option><option>Recomendação de alguém</option><option>Outro</option></select></label>
   <button class="btn full" type="submit">Quero que me encontre casa</button>
  </form>
 </div></div></section>
@@ -193,6 +199,7 @@
     <option>Outro assunto</option>
    </select></label>
    <label class="full">Mensagem<textarea name="mensagem" required placeholder="Conte-me o que procura: zona, tipologia, orçamento…"></textarea></label>
+   <label class="full">Como me conheceu?<select name="como_conheceu"><option value="">—</option><option>Pesquisa no Google</option><option>Instagram</option><option>Facebook</option><option>LinkedIn</option><option>Idealista ou outro portal</option><option>Recomendação de alguém</option><option>Outro</option></select></label>
    <button class="btn solid full" type="submit">Enviar mensagem</button>
    <p class="note full">Also in English and French · Aussi en anglais et en français.</p>
   </form>
@@ -209,7 +216,7 @@
 </main>
 
 <a class="wa" href="https://wa.me/351934263986" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
-<footer><div class="wrap foot"><div style="display:flex;align-items:center;gap:14px"><span class="mono"><b>L</b><i>P</i></span><span>LILIANA PINTO · CONSULTORA IMOBILIÁRIA</span></div><img src="imagens/logo-douro-lovers.png" alt="Douro Lovers"><span>AMI 18696</span></div></footer>
+<footer><div class="wrap foot"><div style="display:flex;align-items:center;gap:14px"><span class="mono"><b>L</b><i>P</i></span><span>LILIANA PINTO · CONSULTORA IMOBILIÁRIA</span></div><img src="imagens/logo-douro-lovers.png" alt="Douro Lovers"><span>AMI 18696</span><a href="#" data-cookies style="color:inherit">Cookies</a></div></footer>
 
 <script>
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{

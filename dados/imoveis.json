@@ -57,7 +57,64 @@
         ],
         "texto_fim": "Visitas mediante marcação. Contacte-me para mais informações ou para agendar a sua visita."
       }
-    ]
+    ],
+    "en": {
+      "slug": "1-bedroom-office-terrace-vyla-penedo-valadares",
+      "titulo": "1-bedroom + office with a 28 m² terrace",
+      "negocio": "For rent",
+      "local": "Vyla Penedo gated community · Valadares, Gaia",
+      "caracteristicas": [
+        "90 m²",
+        "28 m² terrace",
+        "en-suite",
+        "private garage",
+        "24 h security",
+        "available now"
+      ],
+      "preco": "€1,150/month",
+      "alt": "1-bedroom apartment with terrace in the Vyla Penedo gated community, Valadares",
+      "descricao": "Available now. A 90 m² 1-bedroom apartment with an extra room (T1+1) in the Vyla Penedo gated community, in Valadares. 24-hour security, generous spaces and a private terrace that opens onto the living room, the kitchen and the en-suite bedroom.",
+      "secoes": [
+        {
+          "titulo": "The apartment",
+          "itens": [
+            "Layout: a versatile T1+1. The extra room works as a home office, guest room or child's bedroom.",
+            "Living area: 90 m²",
+            "Bathrooms: an en-suite with a full bathroom, plus a second bathroom with a shower serving the living area and the extra room",
+            "Private terrace: 28 m², reached from the living room, the kitchen and the en-suite. Great for meals outdoors and quiet evenings.",
+            "Comfort: central heating, laundry room and plenty of storage",
+            "Orientation: east-facing, with natural light all morning",
+            "Parking: private lock-up garage included"
+          ]
+        },
+        {
+          "titulo": "The Vyla Penedo community",
+          "itens": [
+            "Gatehouse with 24-hour security and concierge",
+            "Large green spaces and well-kept gardens",
+            "Private playground"
+          ]
+        },
+        {
+          "titulo": "Location",
+          "texto": "On Rua Professor Amadeu Santos, in Valadares:",
+          "itens": [
+            "a few minutes from the A29 and A1 motorways",
+            "close to Valadares train station",
+            "close to shops, services and schools",
+            "a short drive from the beaches of Gaia"
+          ]
+        },
+        {
+          "titulo": "Terms",
+          "itens": [
+            "Monthly rent: €1,150",
+            "Available: now"
+          ],
+          "texto_fim": "Viewings by appointment, in person or by video call. Get in touch for more information or to book a viewing."
+        }
+      ]
+    }
   },
   {
     "slug": "t2-duplex-garagem-senhora-da-hora",
@@ -75,7 +132,22 @@
     "foto": "imovel-t2-duplex-senhora-da-hora.jpg",
     "alt": "T2 duplex com garagem",
     "douro_lovers": "https://www.dourolovers.com/pt/property/30429790/",
-    "descricao": "T2 duplex à venda na Senhora da Hora, Matosinhos. São 88 m² distribuídos por dois pisos, com garagem e o metro a poucos passos."
+    "descricao": "T2 duplex à venda na Senhora da Hora, Matosinhos. São 88 m² distribuídos por dois pisos, com garagem e o metro a poucos passos.",
+    "en": {
+      "slug": "2-bedroom-duplex-garage-senhora-da-hora-matosinhos",
+      "titulo": "2-bedroom duplex with garage",
+      "negocio": "For sale",
+      "local": "Senhora da Hora · Matosinhos",
+      "caracteristicas": [
+        "88 m²",
+        "2 floors",
+        "garage",
+        "next to the metro"
+      ],
+      "preco": "€399,000",
+      "alt": "2-bedroom duplex with garage in Senhora da Hora",
+      "descricao": "2-bedroom duplex for sale in Senhora da Hora, Matosinhos, on the edge of Porto. 88 m² over two floors, with a garage and the metro a few steps away."
+    }
   },
   {
     "slug": "moradia-t3-renovada-senhor-da-pedra",
@@ -92,7 +164,21 @@
     "foto": "imovel-moradia-senhor-da-pedra.jpg",
     "alt": "Moradia T3 renovada",
     "douro_lovers": "https://www.dourolovers.com/pt/property/30401286/",
-    "descricao": "Moradia T3 renovada para arrendamento junto à Praia do Senhor da Pedra. Tem três quartos e dois pátios, e fica a cinco minutos da praia."
+    "descricao": "Moradia T3 renovada para arrendamento junto à Praia do Senhor da Pedra. Tem três quartos e dois pátios, e fica a cinco minutos da praia.",
+    "en": {
+      "slug": "renovated-3-bedroom-house-senhor-da-pedra-beach-gaia",
+      "titulo": "Renovated 3-bedroom house",
+      "negocio": "For rent",
+      "local": "Senhor da Pedra beach · Gaia",
+      "caracteristicas": [
+        "3 bedrooms",
+        "2 patios",
+        "5 min from the beach"
+      ],
+      "preco": "€2,500/month",
+      "alt": "Renovated 3-bedroom house near Senhor da Pedra beach",
+      "descricao": "Renovated 3-bedroom house for rent near Senhor da Pedra beach, in Vila Nova de Gaia. Three bedrooms, two patios, and the beach five minutes away."
+    }
   },
   {
     "slug": "moradia-com-terreno-conlelas-braganca",
@@ -108,7 +194,20 @@
     "foto": "imovel-moradia-conlelas.jpg",
     "alt": "Moradia com terreno",
     "douro_lovers": "https://www.dourolovers.com/pt/property/22958660/",
-    "descricao": "Moradia à venda em Conlelas, Bragança, com 2.190 m² de terreno e garagem. Uma casa com espaço exterior no interior Norte."
+    "descricao": "Moradia à venda em Conlelas, Bragança, com 2.190 m² de terreno e garagem. Uma casa com espaço exterior no interior Norte.",
+    "en": {
+      "slug": "house-with-land-conlelas-braganca",
+      "titulo": "House with land",
+      "negocio": "For sale",
+      "local": "Conlelas · Bragança",
+      "caracteristicas": [
+        "2,190 m² of land",
+        "garage"
+      ],
+      "preco": "€159,900",
+      "alt": "House with land in Conlelas, Bragança",
+      "descricao": "House for sale in Conlelas, Bragança, with 2,190 m² of land and a garage. A home with outdoor space in the quiet countryside of northern Portugal."
+    }
   },
   {
     "slug": "lavandaria-trespasse-coimbroes-gaia",
@@ -126,7 +225,21 @@
     "foto_posicao": "40% 50%",
     "alt": "Lavandaria em Coimbrões",
     "douro_lovers": "https://www.dourolovers.com/pt/property/29810684/",
-    "descricao": "Trespasse de lavandaria industrial e tradicional em Coimbrões, Vila Nova de Gaia. O espaço tem 52 m² com mezanino, equipamento completo e clientes fixos de alojamento local."
+    "descricao": "Trespasse de lavandaria industrial e tradicional em Coimbrões, Vila Nova de Gaia. O espaço tem 52 m² com mezanino, equipamento completo e clientes fixos de alojamento local.",
+    "en": {
+      "slug": "laundry-business-for-sale-coimbroes-gaia",
+      "titulo": "Industrial and traditional laundry business",
+      "negocio": "Business for sale",
+      "local": "Coimbrões · Gaia",
+      "caracteristicas": [
+        "52 m² with mezzanine",
+        "fully equipped",
+        "regular holiday-rental clients"
+      ],
+      "preco": "€59,000",
+      "alt": "Laundry business in Coimbrões, Gaia",
+      "descricao": "Running industrial and traditional laundry for sale (business transfer) in Coimbrões, Vila Nova de Gaia. 52 m² with a mezzanine, full equipment and regular holiday-rental clients."
+    }
   },
   {
     "slug": "t3-duplex-ultimo-piso-avenida-da-republica-gaia",
@@ -145,7 +258,23 @@
     "foto": "",
     "alt": "",
     "douro_lovers": "https://www.dourolovers.com/pt/property/28583249/",
-    "descricao": "T3 duplex no último piso, na Avenida da República, em Vila Nova de Gaia. São 125 m² com suite, mais dois quartos e três casas de banho, sol da tarde e o metro à porta."
+    "descricao": "T3 duplex no último piso, na Avenida da República, em Vila Nova de Gaia. São 125 m² com suite, mais dois quartos e três casas de banho, sol da tarde e o metro à porta.",
+    "en": {
+      "slug": "3-bedroom-top-floor-duplex-avenida-da-republica-gaia",
+      "titulo": "3-bedroom top-floor duplex",
+      "negocio": "For sale",
+      "local": "Avenida da República · Gaia",
+      "caracteristicas": [
+        "125 m²",
+        "en-suite + 2 bedrooms",
+        "3 bathrooms",
+        "afternoon sun",
+        "metro at the door"
+      ],
+      "preco": "€410,000",
+      "alt": "",
+      "descricao": "3-bedroom duplex on the top floor, on Avenida da República in Vila Nova de Gaia, across the river from Porto. 125 m² with an en-suite, two more bedrooms, three bathrooms, afternoon sun and the metro at the door."
+    }
   },
   {
     "slug": "terreno-agricola-castanheiros-conlelas-braganca",
@@ -163,6 +292,21 @@
     "foto": "",
     "alt": "",
     "douro_lovers": "https://www.dourolovers.com/pt/property/22958607/",
-    "descricao": "Terreno agrícola em Conlelas, Bragança, com 32.630 m² de castanheiros, dividido em três parcelas e com frente para a estrada."
+    "descricao": "Terreno agrícola em Conlelas, Bragança, com 32.630 m² de castanheiros, dividido em três parcelas e com frente para a estrada.",
+    "en": {
+      "slug": "farmland-chestnut-trees-conlelas-braganca",
+      "titulo": "Farmland with chestnut trees",
+      "negocio": "For sale",
+      "local": "Conlelas · Bragança",
+      "caracteristicas": [
+        "32,630 m²",
+        "chestnut trees",
+        "three plots",
+        "road frontage"
+      ],
+      "preco": "€65,000",
+      "alt": "",
+      "descricao": "Farmland in Conlelas, Bragança: 32,630 m² of chestnut trees, split into three plots, with road frontage."
+    }
   }
 ]

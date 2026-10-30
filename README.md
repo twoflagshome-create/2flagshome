@@ -15,7 +15,7 @@ O formulário "contacto" usa o Netlify Forms. Os pedidos aparecem em Netlify, no
 - `/en/` e `/fr/` página 2FlagsHome completa, em inglês e francês
 - `/imoveis/<nome>` uma página por imóvel, geradas automaticamente
 - `/en/homes/<name>` e `/fr/biens/<nom>` a mesma página de cada imóvel em inglês e em francês, também geradas automaticamente
-- `/en/guides/...` guias para clientes estrangeiros, escritos à mão (acrescentar cada novo guia à lista `GUIAS` em `ferramentas/gerar.py` para entrar no sitemap)
+- `/en/guides/...` e `/fr/guides/...` guias para clientes estrangeiros, escritos à mão (acrescentar cada novo guia, com as suas versões EN e FR, à lista `GUIAS` em `ferramentas/gerar.py` para entrar no sitemap)
 
 ## Acrescentar ou tirar um imóvel
 

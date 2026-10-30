@@ -16,8 +16,11 @@ SITE = RAIZ / "site"
 DOMINIO = "https://2flagshome.com"
 WHATSAPP = "351934263986"
 FOTO_PADRAO = "liliana-retrato.jpg"
-# Guias escritos à mão em site/en/guides/ (entram no sitemap)
-GUIAS = ["/en/guides/buying-a-home-in-portugal"]
+# Guias escritos à mão em site/en/guides/ e site/fr/guides/ (entram no sitemap, com as versões de cada língua)
+GUIAS = [
+    {"en": "/en/guides/buying-a-home-in-portugal", "fr": "/fr/guides/acheter-un-bien-au-portugal"},
+    {"en": "/en/guides/buying-costs-in-portugal", "fr": "/fr/guides/frais-achat-immobilier-portugal"},
+]
 
 COMO_CONHECEU = {
     "pt": ("Como me conheceu?", ["Pesquisa no Google", "Instagram", "Facebook", "LinkedIn", "Idealista ou outro portal", "Recomendação de alguém", "Outro"]),
@@ -350,7 +353,7 @@ def pagina_fr(i, todos):
 <body>
 <header><div class="wrap nav">
  <a class="brand" href="/fr/"><span class="mono"><b>L</b><i>P</i></span><span>2FLAGSHOME</span></a>
- <nav aria-label="Sections"><a href="/fr/#homes">Biens</a><a href="/fr/#how">Comment ça marche</a><a href="/fr/#faq">FAQ</a><a href="/fr/#contact">Contact</a></nav>
+ <nav aria-label="Sections"><a href="/fr/#homes">Biens</a><a href="/fr/guides/acheter-un-bien-au-portugal">Guide d'achat</a><a href="/fr/#faq">FAQ</a><a href="/fr/#contact">Contact</a></nav>
  <div class="langs" role="group" aria-label="Langue"><a href="{url_pt(pt)}" hreflang="pt" lang="pt">PT</a><a href="{url_en(pt)}" hreflang="en" lang="en">EN</a><a href="{url_fr(pt)}" hreflang="fr" lang="fr" aria-current="page">FR</a></div>
 </div></header>
 <main>
@@ -366,7 +369,7 @@ def pagina_fr(i, todos):
   <div class="btns"><a class="btn solid" href="{e(wa)}" target="_blank" rel="noopener">Demander sur WhatsApp</a><a class="btn ghost" href="#enquiry">Réserver une visite</a></div>
   <p class="im-dl"><a href="{e(i['douro_lovers'])}" target="_blank" rel="noopener">Annonce complète et toutes les photos sur Douro Lovers (en portugais) →</a></p>
   <p class="im-lang">Ce n'est pas tout à fait ça ? <a href="/fr/#contact">Dites-moi ce que vous cherchez, je le trouve pour vous.</a></p>
-  <p class="im-lang">Première acquisition au Portugal ? <a href="/fr/#how">Voici comment se passe un achat.</a></p>
+  <p class="im-lang">Première acquisition au Portugal ? <a href="/fr/guides/acheter-un-bien-au-portugal">Lisez le guide étape par étape.</a></p>
  </div>
 </div>
 {secoes}
@@ -408,13 +411,12 @@ def substituir(ficheiro, marca, conteudo):
 def sitemap(imoveis):
     hoje = datetime.date.today().isoformat()
     casa = {"pt": "/", "en": "/en/", "fr": "/fr/"}
-    grupos = [casa] + [{"pt": url_pt(i), "en": url_en(i), "fr": url_fr(i)} for i in imoveis]
+    grupos = [casa] + [{"pt": url_pt(i), "en": url_en(i), "fr": url_fr(i)} for i in imoveis] + GUIAS
     entradas = []
     for g in grupos:
         alt = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{DOMINIO}{u}"/>' for l, u in g.items())
         for u in g.values():
             entradas.append(f"  <url><loc>{DOMINIO}{u}</loc><lastmod>{hoje}</lastmod>{alt}</url>")
-    entradas += [f"  <url><loc>{DOMINIO}{u}</loc><lastmod>{hoje}</lastmod></url>" for u in GUIAS]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(entradas) + "\n</urlset>\n")

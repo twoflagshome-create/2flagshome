@@ -24,7 +24,7 @@ def formulario(assunto):
   <label>Telefone<input type="tel" name="telefone" autocomplete="tel" required></label>
   <label class="full">Email<input type="email" name="email" autocomplete="email"></label>
   <label>Do que precisa<select name="servico">{ops}</select></label>
-  <label>Localidade do imóvel<input type="text" name="localidade" placeholder="ex.: Gaia, Matosinhos"></label>
+  <label>Localidade do imóvel<input type="text" name="localidade" placeholder="ex.: Porto, Braga, Bragança"></label>
   <label class="full">Já foi meu cliente?<select name="cliente"><option>Não, é a primeira vez</option><option>Sim, comprei ou vendi casa consigo</option><option>Sim, arrendei casa consigo</option></select></label>
   <label class="full">Descreva o trabalho<textarea name="mensagem" required placeholder="ex.: trocar 6 tomadas e 2 interruptores, torneira da cozinha a pingar…"></textarea></label>
   <label class="full">Fotografias (opcional)<input type="file" name="fotografia" accept="image/*"></label>
@@ -38,7 +38,7 @@ def pagina(url, titulo, descricao, h1, conteudo, assunto, migalha, wa_txt, faq=(
     canon = D + url
     ld = [{"@context": "https://schema.org", "@type": "Service", "name": migalha, "serviceType": migalha,
            "description": descricao, "url": canon, "inLanguage": "pt",
-           "areaServed": ["Vila Nova de Gaia", "Porto", "Matosinhos"],
+           "areaServed": "Portugal",
            "provider": {"@type": "RealEstateAgent", "name": "Liliana Pinto · Consultora Imobiliária", "url": D + "/", "telephone": "+351934263986"}}]
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -79,7 +79,7 @@ def pagina(url, titulo, descricao, h1, conteudo, assunto, migalha, wa_txt, faq=(
 <main>
 <div class="wrap"><p class="crumbs">{crumbs}</p></div>
 <article class="guia"><div class="wrap">
- <p class="eyebrow">Serviços · Gaia, Porto e Matosinhos</p>
+ <p class="eyebrow">Serviços para a casa</p>
  <h1>{h1}</h1>
 {conteudo}{faq_html}</div></article>
 
@@ -99,7 +99,7 @@ def caixa(titulo, linhas, id_=""):
 
 # ---------- Página geral ----------
 geral = ''' <p class="lead">Além de comprar, vender e arrendar, ajudo-o com o que a casa precisa à volta disso. Precisa de um pintor, de um eletricista ou do certificado energético? Diga-me o que é e eu ponho-o em contacto com profissionais da zona em quem confio.</p>
- <p class="guia-autor">Liliana Pinto, consultora imobiliária (Douro Lovers, AMI 18696). Para quem já foi meu cliente e para quem mora em Gaia, Porto ou Matosinhos.</p>
+ <p class="guia-autor">Liliana Pinto, consultora imobiliária (Douro Lovers, AMI 18696). Para quem já foi meu cliente e para quem procura ajuda com a sua casa, onde quer que ela esteja.</p>
 '''
 geral += caixa("Com que posso ajudar", [
     ("Pintura e pequenas reparações", "Pintar uma divisão ou a casa toda, tapar fissuras, tratar humidades, afinar portas e estores."),
@@ -173,8 +173,8 @@ melhorias += ''' <h2 id="nao">O que normalmente não compensa</h2>
 '''
 
 paginas = [
-    ("index.html", "/servicos/", "Serviços para a casa em Gaia, Porto e Matosinhos · Liliana Pinto",
-     "Precisa de um pintor, eletricista, canalizador ou do certificado energético? Ponho-o em contacto com profissionais de confiança em Gaia, Porto e Matosinhos.",
+    ("index.html", "/servicos/", "Serviços para a casa: pintura, reparações e certificado energético · Liliana Pinto",
+     "Precisa de um pintor, eletricista, canalizador ou do certificado energético? Ponho-o em contacto com profissionais de confiança.",
      "Serviços para a <em>sua casa</em>", geral, "Outro assunto", "Serviços para a casa", "Ol%C3%A1%20Liliana%2C%20gostava%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.", ()),
     ("melhorias-para-vender.html", "/servicos/melhorias-para-vender", "Pequenas obras para vender a casa a melhor preço · Liliana Pinto",
      "Lista de pequenas obras e melhorias que ajudam a vender a casa mais depressa e a melhor preço: pintura, eletricidade, casas de banho, cozinha e apresentação.",

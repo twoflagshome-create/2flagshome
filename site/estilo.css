@@ -228,3 +228,11 @@ a.ph{display:block}
 .guia .faq summary{font-size:22px}
 .guia-nota{color:var(--muted);font-size:13px!important;margin-top:36px}
 @media (max-width:640px){.guia-indice ol{columns:1}.guia-caixa{padding-inline:16px}}
+/* Páginas de serviços */
+.svc-links{margin-top:36px}
+.svc-links .svc{display:flex;flex-direction:column;text-decoration:none;color:inherit;padding-bottom:22px}
+.svc-links .svc:hover h3{color:var(--gold)}
+.svc-links .svc:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.guia .services{margin-top:8px}
+.services.dois{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){.services.dois{grid-template-columns:1fr}}

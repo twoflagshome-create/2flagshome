@@ -26,8 +26,6 @@ GUIAS = [
 SERVICOS = [
     {"pt": "/servicos/"},
     {"pt": "/servicos/melhorias-para-vender"},
-    {"pt": "/servicos/pequenas-reparacoes"},
-    {"pt": "/servicos/gestao-de-arrendamento"},
 ]
 
 COMO_CONHECEU = {
